@@ -7,7 +7,7 @@
     self,
     nixpkgs,
   }: let
-    system = "x86_64-linux"; # Adjust for your system architecture
+    system = "x86_64-linux"; # sorry arm powered laptops and devices
     pkgs = import nixpkgs {
       inherit system;
       overlays = [self.overlays.default];
