@@ -1,7 +1,7 @@
 final: prev: {
   fetch = prev.stdenv.mkDerivation {
     name = "fetch";
-    src = ./.; # Assuming fetch.sh is in the same directory
+    src = ./.;
 
     buildInputs = [prev.lsb-release prev.xorg.xprop];
 
@@ -12,9 +12,9 @@ final: prev: {
     '';
 
     meta = {
-      description = "A shell script to fetch WM info and system details.";
+      description = "lorem ipsum dolor sit amer";
       license = prev.lib.licenses.gpl3;
-      maintainers = with prev.lib.maintainers; ["meow the meowtastic"]; # Add your nixos username here
+      maintainers = with prev.lib.maintainers; ["meow the meowtastic"]; 
     };
   };
 }
